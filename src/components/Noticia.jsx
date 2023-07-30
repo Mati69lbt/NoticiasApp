@@ -22,14 +22,23 @@ const Noticia = ({ noticia }) => {
           height={"250"}
         />
 
-        <CardContent>
+        <CardContent sx={{ height: "14rem" }}>
           <Typography variant="body1" color="error">
             {source.name}
           </Typography>
           <Typography variant="h5" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" component="div">
+          <Typography
+            variant="body2"
+            component="div"
+            style={{
+              display: "-webkit-box",
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+          >
             {description}
           </Typography>
         </CardContent>
