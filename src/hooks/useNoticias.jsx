@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import NoticiasContext from "../context/noticiasProvider.jsx";
+import NewsContext from "../context/NewsProvider.jsx";
 
 const useNoticias = () => {
-  return useContext(NoticiasContext);
+  return useContext(NewsContext);
 };
 
 export default useNoticias;
