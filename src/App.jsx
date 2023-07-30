@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import Formulario from "./components/Formulario";
 
 import ListadoNoticias from "./components/ListadoNoticias";
-import { NoticiasProvider } from "./context/noticiasProvider";
+import { NoticiasProvider } from "./context/noticiasProvider.jsx";
 
 function App() {
   return (
